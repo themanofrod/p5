@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <title>p5.js</title>
+    <script src="javascript/p5.min.js"></script>
+    <script src="javascript/p5.dom.min.js"></script>
+    <script src="javascript/p5.sound.min.js"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+    <ul>
+      <li>
+        <label for="colorSelector">Color</label>
+        <input type="color" id="colorSelector" />
+      </li>
+      <li>
+        <label for="strokeWeight">Weight</label>
+        <div id="strokeWeightValue"></div>
+        <input type="range" orient="vertical" id="strokeWeight" min="1" max="50" value="25">
+      </li>
+      <li>
+        <button id="eraser"><i class="fas fa-eraser"></i></button>
+      </li>
+      <li>
+        <button id="clearScreen"><i class="fas fa-trash"></i></button>
+      </li>
+    </ul>
+    </div>
+  </body>
+  <script src="javascript/sketch.js"></script>
+</html>
